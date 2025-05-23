@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaSpinner } from "react-icons/fa";
 import { toast } from "react-toastify";
 import LocationSelector from "../components/locationSelector";
+import api from "../../api/api"; // Ensure this path matches your actual api file
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -17,14 +18,12 @@ export default function Home() {
   useEffect(() => {
     const fetchProfiles = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/profile");
-        const data = await response.json();
-
-        if (response.ok) {
-          setProfiles(data.data);
+        const res = await api.get("/profile");
+        if (res.data?.success) {
+          setProfiles(res.data.data);
         } else {
-          toast.error(data.message || "Failed to fetch profiles.");
-          console.error("Fetch error:", data.message);
+          toast.error(res.data?.message || "Failed to fetch profiles.");
+          console.error("Fetch error:", res.data?.message);
         }
       } catch (error) {
         toast.error("Network error: Unable to fetch profiles.");
