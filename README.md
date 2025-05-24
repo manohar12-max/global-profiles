@@ -8,9 +8,10 @@
 Accessible only after login with:
 
 Email: admin@gmail.com
-**must login for admin page **
-
 Password: admin
+**must login to access admin page **
+
+
 A responsive and user-friendly web application built using React.js (frontend) and Express.js (backend) that allows users to browse profiles and view their locations interactively on a Google Map. Administrators can manage the profiles through a secure dashboard.
 
 📌 Features
