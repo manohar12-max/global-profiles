@@ -1,4 +1,6 @@
 🌍 Globle Profiles Viewer with Map Integration
+A responsive and user-friendly web application built using React.js (frontend) and Express.js (backend) that allows users to browse profiles and view their locations interactively on a Google Map. Administrators can manage the profiles through a secure dashboard.
+
 ![image alt](https://github.com/manohar12-max/global-profiles/blob/5e7b5c5739d085180c252408f0b4726192e30fca/Screenshot%202025-05-26%20120514.png)
 ![image alt](https://github.com/manohar12-max/global-profiles/blob/5e7b5c5739d085180c252408f0b4726192e30fca/Screenshot%202025-05-26%20120800.png)
 ![image alt](https://github.com/manohar12-max/global-profiles/blob/5e7b5c5739d085180c252408f0b4726192e30fca/Screenshot%202025-05-26%20121413.png)
@@ -19,7 +21,7 @@ Password: admin
 ![image alt](https://github.com/manohar12-max/global-profiles/blob/cfc63217d337aa8c9c535f30f9f494de7588149b/Screenshot%202025-05-26%20122637.png)
 
 
-A responsive and user-friendly web application built using React.js (frontend) and Express.js (backend) that allows users to browse profiles and view their locations interactively on a Google Map. Administrators can manage the profiles through a secure dashboard.
+
 
 📌 Features
 
